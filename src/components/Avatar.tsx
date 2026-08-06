@@ -1,0 +1,3 @@
+import type { HTMLAttributes } from "react";
+export interface AvatarProps extends HTMLAttributes<HTMLDivElement> { src?: string; alt?: string; name?: string; size?: "sm" | "md" | "lg"; }
+export function Avatar({ src, alt = "", name = "", size = "md", className = "", ...props }: AvatarProps) { const initials = name.trim().split(/\s+/).slice(0, 2).map(part => part[0]).join("").toUpperCase(); return <div className={`rb-avatar rb-avatar--${size} ${className}`.trim()} role={src ? undefined : "img"} aria-label={src ? undefined : alt || name} {...props}>{src ? <img src={src} alt={alt || name} /> : initials || "?"}</div>; }

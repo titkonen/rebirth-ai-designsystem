@@ -1,0 +1,3 @@
+import type { HTMLAttributes, ReactNode } from "react";
+export interface CardProps extends HTMLAttributes<HTMLElement> { title?: string; description?: string; footer?: ReactNode; children: ReactNode; }
+export function Card({ title, description, footer, children, className = "", ...props }: CardProps) { return <section className={`rb-card ${className}`.trim()} {...props}>{(title || description) && <header className="rb-card__header">{title && <h2 className="rb-card__title">{title}</h2>}{description && <p className="rb-card__description">{description}</p>}</header>}<div className="rb-card__body">{children}</div>{footer && <footer className="rb-card__footer">{footer}</footer>}</section>; }
