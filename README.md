@@ -24,12 +24,12 @@ export function Example() {
 
 ## Selaimesikatselu
 
-`preview.html` on dokumentaation etusivu. Se sisältää vasemman navigaation ja linkit
+`index.html` on dokumentaation etusivu. Se sisältää vasemman navigaation ja linkit
 komponenttikohtaisiin alasivuihin `pages/`-kansiossa.
-Käynnistä projektin juuressa paikallinen palvelin ja avaa selaimessa `preview.html`:
+Käynnistä projektin juuressa paikallinen palvelin ja avaa selaimessa `index.html`:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Osoite on tällöin `http://localhost:8000/preview.html`.
+Osoite on tällöin `http://localhost:8000/index.html`.
