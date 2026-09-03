@@ -19,7 +19,8 @@
 .rb-hint, .rb-error { font: .8125rem/1.25 var(--rb-font-sans); }
 .rb-hint { color: var(--rb-color-neutral-600); }.rb-error { color: var(--rb-color-danger); }
 .rb-input { background: white; border: 1px solid var(--rb-color-neutral-200); border-radius: var(--rb-radius-md); box-sizing: border-box; color: var(--rb-color-neutral-900); font: .9375rem/1.25 var(--rb-font-sans); min-height: 2.5rem; padding: 0 .75rem; width: 100%; }
-.rb-input::placeholder { color: var(--rb-color-neutral-400); }.rb-input--error { border-color: var(--rb-color-danger); }
+.rb-input::placeholder, .rb-textarea::placeholder { color: var(--rb-color-neutral-400); }.rb-input--error, .rb-textarea--error { border-color: var(--rb-color-danger); }
+.rb-textarea { background: white; border: 1px solid var(--rb-color-neutral-200); border-radius: var(--rb-radius-md); box-sizing: border-box; color: var(--rb-color-neutral-900); font: .9375rem/1.45 var(--rb-font-sans); min-height: 7rem; padding: .75rem; width: 100%; }.rb-textarea--vertical { resize: vertical; }.rb-textarea--none { resize: none; }.rb-textarea--both { resize: both; }.rb-textarea:disabled { cursor: not-allowed; opacity: .5; }
 .rb-choice, .rb-switch { align-items: flex-start; cursor: pointer; display: inline-flex; gap: var(--rb-space-3); position: relative; }
 .rb-choice__input, .rb-switch__input { height: 1px; opacity: 0; position: absolute; width: 1px; }
 .rb-choice__indicator { background: white; border: 1px solid var(--rb-color-neutral-200); flex: 0 0 auto; height: 1.25rem; margin-top: .0625rem; position: relative; width: 1.25rem; }
