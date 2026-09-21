@@ -7,3 +7,5 @@ export * from "./components/Avatar/Avatar";
 export * from "./components/Alert/Alert";
 export * from "./components/Tabs/Tabs";
 export * from "./components/SelectionControl/SelectionControl";
+export * from "./components/pagination/Pagination";
+export * from "./components/popovers/Popover";
